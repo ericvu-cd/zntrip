@@ -36,3 +36,12 @@ html{height:100%;overflow:hidden}body{height:100%;height:100dvh;overflow:hidden;
 
 /* Paper grain extends beyond the illustrated map without filtering the landmarks. */
 .world{background-color:#b7c69b;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");background-blend-mode:multiply}
+
+body.task-expanded .panel{top:max(12px,env(safe-area-inset-top));bottom:calc(62px + env(safe-area-inset-bottom));padding:35px 20px 36px;border-radius:23px 23px 0 0;z-index:11}
+body.task-expanded header{visibility:hidden}body.task-expanded .world{pointer-events:none}body.task-expanded .landmark-label-layer{visibility:hidden}
+#drawerCollapse{display:none;position:fixed;right:16px;top:calc(max(12px,env(safe-area-inset-top)) + 14px);z-index:13;min-height:38px;padding:6px 12px;background:#eee9db;border:0;border-radius:20px;font-size:13px}
+body.task-expanded #drawerCollapse{display:block}body.bag-open #drawerCollapse{display:none}
+body.task-expanded .panel>h1{padding-right:65px}body.task-expanded .panel:before{position:relative;top:auto;margin:-22px auto 20px}
+.panel{transition:top .2s ease-out}.panel section.integrations-section{padding:0;border:0;margin:28px 0 0}.section-title{font-size:19px;margin:24px 0 12px}.section-title span{font-size:12px;font-weight:400;color:#74806d}.integration-route{font-size:11px!important;color:#7c694b!important}.integrations-section .mission-list>button{border-left:3px solid #b98454;background:#fbf6e9}.task-toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding-right:62px;margin-bottom:8px}.task-toolbar .small{margin:0;min-height:38px}.arrival-details{background:#eeeddf;padding:12px;border-radius:10px;margin:16px 0}.arrival-details summary{font-size:14px}#phoneToast{max-width:calc(100% - 32px);white-space:normal;text-align:center}body.task-expanded .panel input,body.task-expanded .panel select{font-size:16px;min-height:48px}
+@media(prefers-reduced-motion:reduce){.panel{transition:none}}
+.integration-summary{display:block;text-align:left;width:100%;padding:11px 13px;border:1px solid #c9ad83;border-radius:10px;background:#f4ebd8;color:#6e5437;font-size:13px;min-height:44px;margin:12px 0}#siteIntegrations{scroll-margin-top:16px}
