@@ -1,0 +1,16 @@
+{
+  "source_bytes": 4038306,
+  "output_bytes": 1278023,
+  "sample_rate": 32000,
+  "channels": 2,
+  "loop_seconds": 156.5,
+  "crossfade_seconds": 4.0,
+  "trimmed_start_seconds": 2.5,
+  "trimmed_end_at_seconds": 163.0,
+  "target_lufs": -24,
+  "codec": "AAC LC 64 kbps stereo",
+  "reduction_percent": 68.4,
+  "measured_lufs": -24.05,
+  "measured_true_peak_dbtp": -10.98,
+  "runtime_loop_seconds": 156.48
+}
